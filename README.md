@@ -498,7 +498,7 @@ I have also used _monocart-reporter_ [Monocart](https://github.com/cenfun/monoca
 npx monocart show-report <<path-to-index.hmtl>>
 ```
 
-You can see the path of the report [here](https://github.com/shivam-dhir/PlaywrightAutomation/blob/main/playwright.config.ts#L28).
+You can see the path of the report [here](https://github.com/shivam-dhir/AutoPilot/blob/main/playwright.config.ts#L28).
 
 Suppose you are running different projects or tests are running over different shards then multiple html files will be generated. You can combine multiple reports into on by running the command
 
@@ -506,8 +506,8 @@ Suppose you are running different projects or tests are running over different s
 npm run merge-reports
 ```
 
-[merge-report.js](https://github.com/shivam-dhir/PlaywrightAutomation/blob/main/utils/merge-reports.js) will combine multiple html files into single file.
-[Merged HTML Report](https://github.com/shivam-dhir/PlaywrightAutomation/blob/main/merged-report/)
+[merge-report.js](https://github.com/shivam-dhir/AutoPilot/blob/main/utils/merge-reports.js) will combine multiple html files into single file.
+[Merged HTML Report](https://github.com/shivam-dhir/AutoPilot/blob/main/merged-report/)
 
 # CI
 
