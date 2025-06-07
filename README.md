@@ -4,8 +4,6 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
-
 ![RUNS WITH GITHUB ACTIONS](https://img.shields.io/badge/RUNS%20WITH%20GITHUB%20ACTIONS-BLUE?style=for-the-badge)
 
 ![RUNS ON DOCKER CONTAINER](https://img.shields.io/badge/RUNS%20ON%20DOCKER%20CONTAINER-BLUE?style=for-the-badge)
@@ -354,13 +352,13 @@ params?: { [key: string]: string | number | boolean };
 
 [(Back to top)](#table-of-contents)
 
-We will be using Page object Model and Page components to design our tests. Pages are maintained under `pages` folder and Page components are maintained under `pagecomponents`. To get more information on Page Object, refer to this beautiful article [Page Object](https://martinfowler.com/bliki/PageObject.html) by `Martin Fowler`.
+I have incorporated Page object Model and Page components to design my tests. Pages are maintained under `pages` folder and Page components are maintained under `pagecomponents`. To get more information on Page Object, refer to this beautiful article [Page Object](https://martinfowler.com/bliki/PageObject.html) by `Martin Fowler`.
 
 # Fixtures
 
 [(Back to top)](#table-of-contents)
 
-Test fixtures are used to establish an environment for each test, giving the test everything it needs and nothing else. Test fixtures are isolated between tests. With fixtures, you can group tests based on their meaning instead of their standard setup. More information about fixtures can be found on official documentation [here](https://www.cuketest.com/playwright/docs/test-fixtures/).
+Test fixtures are used to establish an environment for each test, giving the test everything it needs and nothing else. Test fixtures are isolated between tests. With fixtures, I grouped tests based on their meaning instead of their standard setup. More information about fixtures can be found on official documentation [here](https://www.cuketest.com/playwright/docs/test-fixtures/).
 
 Here is another [blog](https://blog.delpuppo.net/playwright-fixtures) for Playwright fixtures.
 
@@ -488,7 +486,7 @@ docker run --rm --ipc=host -v $PWD:/app shivam/playwright-automation npx playwri
 
 Create clear, concise, and attractive Allure Reports. It provides a visual and user-friendly interface that allows developers and testers to obtain detailed insights into what is happening in their tests
 
-To generate allure report 
+To generate allure reports
 ```bash
 npm run test:reporter 
 npm run open:allure-report
@@ -544,11 +542,7 @@ After the above command is executed, you can see the snapshot in your local repo
 For debugging purpose, you can run the container in interactive mode. For this you can use `-it` flag and override the command with `/bin/sh`
 
 ```
-
 docker run -it --rm --ipc=host -v $PWD:/app shivam/playwright-automation /bin/sh
-
-
-
 ```
 
 Above command will open up the terminal in your running conatiner. Now you can run any command to perform the operations inside the conatiner.
@@ -558,7 +552,5 @@ Above command will open up the terminal in your running conatiner. Now you can r
 You can run the visual tests in docker container by running below command
 
 ```
-
 docker run --rm --ipc=host -v $PWD:/app shivam/playwright-automation npx playwright test --grep visual --project chromium
-
 ```
