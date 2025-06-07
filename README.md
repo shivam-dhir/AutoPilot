@@ -488,6 +488,8 @@ docker run --rm --ipc=host -v $PWD:/app shivam/playwright-automation npx playwri
 
 [(Back to top)](#table-of-contents)
 
+Create clear, concise, and attractive Allure Reports. It provides a visual and user-friendly interface that allows developers and testers to obtain detailed insights into what is happening in their tests
+
 To generate allure report 
 ```bash
 npm run test:reporter 
