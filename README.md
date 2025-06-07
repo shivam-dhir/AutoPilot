@@ -14,7 +14,7 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
 
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohdjeeshan)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shivamdhir13/)
 
 ##### `A boilerplate framework that helps you to write automation tests for UI, REST API, GraphQL and Visual E2E.`
 
@@ -48,7 +48,7 @@
 
 ```
 
-git clone https://github.com/jeeshan12/PlaywrightAutomation.git
+git clone https://github.com/shivam-dhir/AutoPilot.git
 
 ```
 
@@ -442,7 +442,7 @@ sh playwright-image-version.sh
 
 ```
 
-It will create a image with name `jeeshan/playwright-automation`. You can run `docker images` command to see the built images.
+It will create a image with name `shivam/playwright-automation`. You can run `docker images` command to see the built images.
 
 If you want to chnage the image name, you can change this in shell script
 
@@ -460,7 +460,7 @@ docker build -t <<imageName>> -f Dockerfile --build-arg PW_VERSION="v$VERSION" .
 
 ```
 
-docker run --rm jeeshan/playwright-automation npx playwright test --project api
+docker run --rm shivam/playwright-automation npx playwright test --project api
 
 ```
 
@@ -468,7 +468,7 @@ docker run --rm jeeshan/playwright-automation npx playwright test --project api
 
 ```
 
-docker run --rm jeeshan/playwright-automation npx playwright test --project chromium --grepinvert /visual/
+docker run --rm shivam/playwright-automation npx playwright test --project chromium --grepinvert /visual/
 
 ```
 
@@ -476,7 +476,7 @@ docker run --rm jeeshan/playwright-automation npx playwright test --project chro
 
 ```
 
-docker run --rm --ipc=host -v $PWD:/app jeeshan/playwright-automation npx playwright test --grep visual --project chromium --update-snapshots
+docker run --rm --ipc=host -v $PWD:/app shivam/playwright-automation npx playwright test --grep visual --project chromium --update-snapshots
 
 ```
 
@@ -494,7 +494,7 @@ I have used _monocart-reporter_ [Monocart](https://github.com/cenfun/monocart-re
 npx monocart show-report <<path-to-index.hmtl>>
 ```
 
-You can see the path of the report [here](https://github.com/jeeshan12/PlaywrightAutomation/blob/main/playwright.config.ts#L28).
+You can see the path of the report [here](https://github.com/shivam-dhir/PlaywrightAutomation/blob/main/playwright.config.ts#L28).
 
 Suppose you are running different projects or tests are running over different shards then multiple html files will be generated. You can combine multiple reports into on by running the command
 
@@ -502,8 +502,8 @@ Suppose you are running different projects or tests are running over different s
 npm run merge-reports
 ```
 
-[merge-report.js](https://github.com/jeeshan12/PlaywrightAutomation/blob/main/utils/merge-reports.js) will combine multiple html files into single file.
-[Merged HTML Report](https://github.com/jeeshan12/PlaywrightAutomation/blob/main/merged-report/)
+[merge-report.js](https://github.com/shivam-dhir/PlaywrightAutomation/blob/main/utils/merge-reports.js) will combine multiple html files into single file.
+[Merged HTML Report](https://github.com/shivam-dhir/PlaywrightAutomation/blob/main/merged-report/)
 
 # CI
 
@@ -523,13 +523,13 @@ sh playwright-image-version.sh
 
 ```
 
-This will create a docker image with name `jeeshan/playwright-automation`. If you want, you can change the image name in shell script `playwright-image-version.sh`.
+This will create a docker image with name `shivam/playwright-automation`. If you want, you can change the image name in shell script `playwright-image-version.sh`.
 
 Once image is built you can update the snapshots from the docker conatiner by running the command
 
 ```
 
-docker run --rm --ipc=host -v $PWD:/app jeeshan/playwright-automation npx playwright test --grep visual --project chromium --update-snapshots
+docker run --rm --ipc=host -v $PWD:/app shivam/playwright-automation npx playwright test --grep visual --project chromium --update-snapshots
 
 ```
 
@@ -539,7 +539,7 @@ For debugging purpose, you can run the container in interactive mode. For this y
 
 ```
 
-docker run -it --rm --ipc=host -v $PWD:/app jeeshan/playwright-automation /bin/sh
+docker run -it --rm --ipc=host -v $PWD:/app shivam/playwright-automation /bin/sh
 
 
 
@@ -553,6 +553,6 @@ You can run the visual tests in docker container by running below command
 
 ```
 
-docker run --rm --ipc=host -v $PWD:/app jeeshan/playwright-automation npx playwright test --grep visual --project chromium
+docker run --rm --ipc=host -v $PWD:/app shivam/playwright-automation npx playwright test --grep visual --project chromium
 
 ```
