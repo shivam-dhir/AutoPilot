@@ -488,7 +488,13 @@ docker run --rm --ipc=host -v $PWD:/app shivam/playwright-automation npx playwri
 
 [(Back to top)](#table-of-contents)
 
-I have used _monocart-reporter_ [Monocart](https://github.com/cenfun/monocart-reporter) to generate the HTML reports. After execution is done you can open monocart report by running the command
+To generate allure report 
+```bash
+npm run test:reporter 
+npm run open:allure-report
+```
+
+I have also used _monocart-reporter_ [Monocart](https://github.com/cenfun/monocart-reporter) to generate the HTML reports. After execution is done you can open monocart report by running the command
 
 ```
 npx monocart show-report <<path-to-index.hmtl>>
