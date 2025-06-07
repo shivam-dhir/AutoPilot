@@ -12,11 +12,9 @@
 
 ![USES ZOD](https://img.shields.io/badge/USES%20ZOD-gray?style=for-the-badge)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
-
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shivamdhir13/)
 
-##### `A boilerplate framework that helps you to write automation tests for UI, REST API, GraphQL and Visual E2E.`
+##### `A boilerplate framework to write automation tests for UI, REST API, GraphQL and Visual E2E.`
 
 # Table of contents
 
