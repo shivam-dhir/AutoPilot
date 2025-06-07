@@ -1,0 +1,13 @@
+name: Biome Formatting and linting
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+jobs:
+  biome:
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: shivam-dhir/resusable_workflows/.github/workflows/biome-format.yaml@v2.8.0
+    secrets: inherit
