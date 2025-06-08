@@ -1,3 +1,4 @@
+// using variable z to represent zod
 import { z } from "zod";
 
 const UserDetails = z.object({
