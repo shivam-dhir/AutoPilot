@@ -1,4 +1,4 @@
-# stop .editorconfig files search on current file.
+# stop .editorconfig files search on current file
 root = true
 
 # Unix-style newlines with a newline ending every file
