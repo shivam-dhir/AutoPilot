@@ -13,7 +13,7 @@
     "docker",
     "github actions"
   ],
-  "author": "Mohammad Jeeshan",
+  "author": "Shivam Dhir",
   "license": "ISC",
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
