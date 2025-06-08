@@ -2,7 +2,7 @@
 
 VERSION=$(cat package.json | grep '@playwright/test' | awk -F'"~' '{print $2}' | awk -F'"' '{print $1}')
 
-docker  build -t  jeeshan/playwright-automation  -f Dockerfile  --build-arg PW_VERSION="v$VERSION" .
+docker  build -t  shivam/playwright-automation  -f Dockerfile  --build-arg PW_VERSION="v$VERSION" .
 
 # docker compose down
 # "PW_VERSION=$(cat ./package.json | grep '@playwright/test' | awk -F: '{ print $2 }' | sed 's/[\"/,]//g' | tr  -d ^) ; echo $PW_VERSION"
