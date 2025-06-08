@@ -87,7 +87,7 @@ test.describe(
       {
         tag: "@api",
       },
-      async ({ request }, testInfo) => {
+      async ({ request }, testInfo) => { 
         const user: User = DataFactory.getUserDetails();
         const postOptions: PostMethodOptions = {
           url: "/api/users",
