@@ -1,8 +1,8 @@
 import { test as login } from "@playwright/test";
 
 const authFile = ".auth/login.json";
-const USERNAME = "standard_user" || process.env.USERNAME;
-const PASSWORD = "secret_sauce" || process.env.PASSWORD;
+const USERNAME = process.env.USERNAME || "standard_user";
+const PASSWORD = process.env.PASSWORD || "secret_sauce";
 login("Save  Storage state", async ({ page }) => {
   await page.goto("/");
   await page.getByTestId("username").fill(USERNAME);
